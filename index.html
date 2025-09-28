@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Extractor App</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <h2>Upload File & Extract</h2>
+  <input type="file" id="fileInput" accept=".txt,.csv,.pdf">
+  <button onclick="extractFile()">Extract File</button>
+
+  <div id="infoBox">
+    <h3>Information</h3>
+    <ul id="infoList"></ul>
+    <button onclick="nextData()">Next</button>
+  </div>
+
+  <div id="websiteBox">
+    <h3>Load Website</h3>
+    <input type="text" id="websiteLink" placeholder="Enter Website Link">
+    <button onclick="loadWebsite()">Load Website</button>
+    <iframe id="webFrame" style="width:100%;height:300px;"></iframe>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
